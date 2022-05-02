@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Karla:wght@200;300&display=swap');
+
+* {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090909;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 30px;
+}
+
+h1 {
+    font-family: 'Barlow';
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+
+.container-input {
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span {
+    font-size: 22px;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    border-radius: 50px;
+    background: #001e4067;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta {
+    height: 40px;
+    background-color: #003C80;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button-cta:hover {
+    background-color: #001E40;
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 24px;
+    margin: 24px 0 8px;
+}
+
+.password {
+    font-size: 22px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.366);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .password {
+        font-size: 14px;
+    }
+
+    .container-input, .container-password {
+        width: 300px;
+    }
+}
